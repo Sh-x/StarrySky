@@ -1,5 +1,5 @@
 var r;
-var factor = 0;
+var factor = 1;
 var rate = 0.005
 var total = 300;
 
@@ -20,7 +20,7 @@ function draw() {
     background(0);
 
     factor += rate;
-    if(factor >= 6 || factor < 0)  {rate *= -1;}
+    if(factor >= 6 || factor < 1)  {rate *= -1;}
 
     translate(windowWidth / 2, windowHeight / 2);
     stroke(factor * 100 % 360, 100, 50);
